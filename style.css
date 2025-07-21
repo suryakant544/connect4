@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  grid-template-rows: repeat(6, 80px);
+  gap: 8px;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: #1e1e2f;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #2e2e3e;
+  border-radius: 50%;
+  border: 3px solid #444;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background-color: #555;
+}
+
+.red {
+  background: radial-gradient(circle at 30% 30%, #ff4d4d, #cc0000);
+}
+
+.yellow {
+  background: radial-gradient(circle at 30% 30%, #ffeb3b, #f9a825);
+}
+
+.info-panel {
+  margin-top: 20px;
+}
+
+#status {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff6f00;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff8f00;
+}
